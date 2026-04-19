@@ -1,0 +1,141 @@
+/*Style fonts here*/
+@import url('https://fonts.googleapis.com/css2?family=Chicle&family=Fascinate+Inline&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Knewave&family=Sora:wght@100..800&display=swap');
+/*Style fonts ends here */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color:  #f5f5f5;
+}
+/* Header starts here */
+/* navigation */
+
+ul {
+  display: flex;                
+  justify-content: flex-end; 
+  list-style-type: none;
+  background-color: #0e306c;
+}
+
+
+ul li a {
+  font-family: "Sora", Arial, Helvetica, sans-serif;
+  font-size:20px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #446db2;
+}
+
+/* Background image */
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.background-img {
+  width: 100%;
+  height: 10%;
+  top:0;
+  left:0;
+  filter: saturate(80%);;
+}
+
+.centered h1 {
+  font-family: "Knewave", Arial, Helvetica, sans-serif;
+  font-size: 150px;
+  color: antiquewhite;
+  -webkit-text-stroke: 1px #422b08; /*font border*/
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered p {
+  font-family: "Chicle", Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  color: rgb(76, 47, 3);
+  -webkit-text-stroke: 1px #fceacd; /*font border*/
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* header ends here*/
+
+/* main starts here */
+
+.introduction {
+  max-width: 900px;
+  margin: 80px auto;  
+  padding: 0 20px;
+  text-align: center;
+}
+/* section 1 */
+.main-title h2 {
+  font-family: "Sora", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: #0e306c;
+  text-align: center;
+  padding: 24px;
+  margin:10px;
+  margin-bottom:20px;
+}
+
+.main-text p {
+  font-family: "Sora", Arial, Helvetica, sans-serif;
+  text-align: justify;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+/* section 2*/
+
+.introduction-extra {
+  display: flex;
+  justify-content: center;
+  margin: 100px auto;
+  max-width: 1100px;
+}
+
+.box {
+  flex: 1;
+  padding: 60px 30px;
+  color: white;
+  text-align: center;
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+.white, .blue, .yellow {
+  font-family: "Sora", Arial, Helvetica, sans-serif;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5%;
+  box-shadow: 5px 10px #888888;
+}
+.white {
+  background-color: white;
+}
+.blue {
+
+   background-color: #0093dd;
+}
+.yellow {
+
+   background-color: #f6b800;
+}
+
