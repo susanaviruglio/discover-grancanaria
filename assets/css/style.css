@@ -32,7 +32,7 @@ ul li a {
   text-decoration: none;
 }
 
-ul li a:hover {
+nav ul li a:hover {
   background-color: #446db2;
 }
 
@@ -40,32 +40,36 @@ ul li a:hover {
 
 .container {
   position: relative;
+  height:70vh;
+  min-height: 350px;
+  max-height: 900px;
+  overflow: hidden;
   text-align: center;
   color: white;
 }
 
 .background-img {
   width: 100%;
-  height: 900px;
-  top:0;
-  left:0;
-  filter: saturate(80%);;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(80%);
 }
 
 .centered h1 {
   font-family: "Knewave", Arial, Helvetica, sans-serif;
-  font-size: 150px;
+  font-size: clamp(45px, 8vw, 150px); /*responsive font size*/
   color: antiquewhite;
   -webkit-text-stroke: 1px #422b08; /*font border*/
   position: absolute;
   top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
+  white-space: nowrap; /*keep text in the same line*/
 }
 
 .centered p {
   font-family: "Chicle", Arial, Helvetica, sans-serif;
-  font-size: 50px;
+  font-size: clamp(22px, 3vw, 50px);
   color: rgb(76, 47, 3);
   -webkit-text-stroke: 1px #fceacd; /*font border*/
   position: absolute;
@@ -87,7 +91,7 @@ ul li a:hover {
 .main-title h2 {
   font-family: "Sora", Arial, Helvetica, sans-serif;
   font-weight: bold;
-  font-size: 40px;
+  font-size: clamp(26px, 4vw, 40px);
   color: #0e306c;
   text-align: center;
   padding: 24px;
@@ -98,7 +102,7 @@ ul li a:hover {
 .main-text p {
   font-family: "Sora", Arial, Helvetica, sans-serif;
   text-align: justify;
-  font-size: 20px;
+  font-size: clamp(16px, 2vw, 20px);
   line-height: 1.8;
 }
 
@@ -107,26 +111,33 @@ ul li a:hover {
 .introduction-extra {
   display: flex;
   justify-content: center;
+  gap:20px;
   margin: 100px auto;
   max-width: 1100px;
+  padding: 0 20px;
 }
 
 .box {
   flex: 1;
   padding: 60px 30px;
-  color: white;
   text-align: center;
   font-weight: 500;
-  margin: 0 10px;
-}
-
-.white, .blue, .yellow {
-  font-family: "Sora", Arial, Helvetica, sans-serif;
   color: black;
   border: 1px solid black;
-  border-radius: 5%;
+  border-radius: 20px;
   box-shadow: 5px 10px #888888;
+  font-family: "Sora", Arial, Helvetica, sans-serif;
 }
+
+.box h3 {
+  font-size: clamp(20px, 3vw, 27px);
+}
+
+.box p {
+  font-size: clamp(16px, 2vw, 20px);
+  padding-top: 20px;
+}
+
 .white {
   background-color: white;
 }
@@ -141,6 +152,9 @@ ul li a:hover {
 
 /*footer starts here*/
 
+footer {
+  text-align: center;
+}
 
 footer ul {
   display: flex;
@@ -148,25 +162,25 @@ footer ul {
   align-items: center;
   background-color: #0e306c;
   padding: 15px;
-  gap: 30px;               
+  gap: 30px;
+  list-style: none;
+  flex-wrap: wrap;             
 }
 
 footer ul li {
   list-style: none;
 }
 
-footer {
-  text-align: center;
-}
-
 footer a {
+  font-size: 20px;
   color: white;
   text-decoration: none;
   font-family: "Sora", Arial, Helvetica, sans-serif;
 }
 
 footer a:hover {
-  text-decoration: underline;
+  color: #91a9d4
+
 }
 
 #copyright {
@@ -175,3 +189,96 @@ footer a:hover {
   font-style:italic;
   font-size:20px;
 }
+
+
+@media only screen and (max-width: 1583px ) {
+    
+  .centered p {
+    top: 32%;
+  }
+}
+
+
+@media only screen and (max-width: 1095px ) {
+
+  .centered p {
+    top: 30%;
+  }
+
+} 
+
+@media only screen and (max-width: 973px ) {
+    
+  .centered p {
+    top: 32%;
+  }
+
+} 
+
+
+@media only screen and (max-width: 879px ) {
+    
+  .centered p { 
+    display: none;
+  }
+
+} 
+
+/*Tablet*/
+@media only screen and (max-width: 768px) {
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  ul li a {
+    font-size: 14px;
+    padding: 10px;
+  }
+  
+  .introduction-extra {
+    flex-direction: column;
+    height: auto;
+    padding: 0 20px;
+    gap: 25px;
+  }
+
+  .box {
+    margin: 0;
+  }
+}
+
+/*Mobile*/
+@media only screen and (max-width: 480px) {
+  .centered h1 {
+    font-size: 42px;
+  }
+
+  .main-title h2 {
+    font-size: 24px;
+  }
+
+  .main-text p {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  footer ul li {
+    flex: 0 0 auto;
+  }
+
+  #copyright {
+    flex: 0 0 100%; 
+    text-align: center;
+    margin-bottom: 5px;
+  }
+}
+
+
