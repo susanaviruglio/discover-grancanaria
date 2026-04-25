@@ -36,7 +36,7 @@ nav ul li a:hover {
   background-color: #446db2;
 }
 
-/* Background image */
+/* Background image Home*/
 
 .container {
   position: relative;
@@ -79,7 +79,7 @@ nav ul li a:hover {
 }
 /* header ends here*/
 
-/* main starts here */
+/* homepage main starts here */
 
 .introduction {
   max-width: 900px;
@@ -87,6 +87,7 @@ nav ul li a:hover {
   padding: 0 20px;
   text-align: center;
 }
+
 /* section 1 */
 .main-title h2 {
   font-family: "Sora", Arial, Helvetica, sans-serif;
@@ -104,6 +105,7 @@ nav ul li a:hover {
   text-align: justify;
   font-size: clamp(16px, 2vw, 20px);
   line-height: 1.8;
+  color: black;
 }
 
 /* section 2*/
@@ -149,6 +151,94 @@ nav ul li a:hover {
 
    background-color: #f6b800;
 }
+/* Destinations page style starts here*/
+#destinations-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(80%);
+}
+
+.destination-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 110px;
+      margin: 100px auto;
+      max-width: 1250px;
+      padding: 0 40px;
+}
+
+.destination-container.reverse {
+    flex-direction: row-reverse;
+}
+
+.destination-image img {
+    width: 580px;
+    max-width: 1000px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 5px 10px #888888;
+    transition: transform 0.3s ease;
+}
+
+.destination-image img:hover {
+    transform: scale(1.03);
+}
+.destination-info {
+    max-width: 430px;
+}
+
+.destination-info h3 {
+    font-size: 2.2rem;
+    margin: 10px 0 15px;
+    font-family: "Sora", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #0e306c;
+}
+
+.destination-info p {
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 1.6;
+    color: black;
+    font-family: "Sora", Arial, Helvetica, sans-serif;
+    margin-bottom: 25px;
+}
+
+.destination-info button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color:#f6b800;
+    color: #0e306c;
+    font-family: "Sora", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: none;
+    padding: 14px 26px;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.destination-info button:hover {
+    background-color:   #0093dd;
+     color: black;
+}
+
+/* ICON */
+.destination-info button i {
+    transition: transform 0.3s ease;
+}
+
+.destination-info button:hover i {
+    transform: translateX(5px);
+}
+
+
+
 
 /*footer starts here*/
 
@@ -224,8 +314,9 @@ footer a:hover {
 
 } 
 
-/*Tablet*/
+/*Tablet Responsive*/
 @media only screen and (max-width: 768px) {
+  /* ===== Homepage Responsive ===== */
   nav ul {
     flex-wrap: wrap;
     justify-content: center;
@@ -246,10 +337,34 @@ footer a:hover {
   .box {
     margin: 0;
   }
+  /* ===== Destinations Responsive ===== */
+  .destination-container,
+    .destination-container.reverse {
+        flex-direction: column;
+        gap: 35px;
+        margin: 70px auto;
+        padding: 0 25px;
+        text-align: center;
+    }
+
+    .destination-image img {
+        width: 100%;
+        max-width: 100%;
+        height: 280px;
+    }
+
+    .destination-info {
+        max-width: 100%;
+    }
+
+    .destination-info h3 {
+        font-size: 2rem;
+    }
 }
 
-/*Mobile*/
+/*Mobile Responsive*/
 @media only screen and (max-width: 480px) {
+  /* ===== Homepage Responsive ===== */
   .centered h1 {
     font-size: 42px;
   }
@@ -279,6 +394,32 @@ footer a:hover {
     text-align: center;
     margin-bottom: 5px;
   }
+    /* ===== Destinations Responsive ===== */
+    .destination-container,
+    .destination-container.reverse {
+        gap: 25px;
+        margin: 50px auto;
+        padding: 0 18px;
+    }
+
+    .destination-image img {
+        height: 220px;
+        border-radius: 15px;
+    }
+
+    .destination-info h3 {
+        font-size: 1.7rem;
+    }
+
+    .destination-info p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .destination-info button {
+        padding: 12px 20px;
+        font-size: 0.85rem;
+    }
 }
 
 
