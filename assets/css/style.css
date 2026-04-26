@@ -550,14 +550,162 @@ nav ul li a:hover {
 }
 
 /*================ Contacts Page starts here=====================*/
-
-#contacts-background-img {
+#contacts-background-img{
      background-image:
         linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),
         url('../images/contact.png');
 }
+.form-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 100px auto;
+  max-width: 1100px;
+  padding: 0 20px;
+  flex-wrap: wrap;
+  font-family: "Sora", Arial, Helvetica, sans-serif;
+}
+
+.form-content,
+.contact-info {
+  width: 420px;
+  background-color: #e6d7c3;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* ===== Form ===== */
+
+.form-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-content label {
+  font-weight: bold;
+  color: #0e306c;
+}
+
+.form-content input,
+.form-content textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.form-content textarea {
+  min-height: 120px;
+}
+
+.form-content button {
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 30px;
+  border: none;
+  background-color: #f6b800;
+  color: #0e306c;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-content button:hover {
+  background-color: #0093dd;
+  color: black;
+}
+
+/* ===== Contact Info ===== */
+
+.contact-info h3 {
+  font-size: 2rem;
+  color: #0e306c;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.contact-info i {
+  color: #0e306c;
+}
 
 
+.contact-info hr {
+  border: none;
+  height: 2px;
+  background-color: #f6b800;
+  margin: 20px 0;
+}
+
+/* ===== FAQ ===== */
+
+.contact-info h4 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 20px 0;
+  color: #0e306c;
+}
+
+.faq-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-info details {
+  background-color: #f5f5f5;
+  border-radius: 15px;
+  padding: 15px 20px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.contact-info details:hover {
+  transform: translateY(-2px);
+}
+
+.contact-info summary {
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  list-style: none;
+  color: #0e306c;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.contact-info summary::-webkit-details-marker {
+  display: none;
+}
+
+
+.contact-info summary::before {
+  content: "▾";
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+
+.contact-info details[open] summary::before {
+  transform: rotate(180deg);
+}
+
+.contact-info details p {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #333;
+}
 /*================ Footer starts here=====================*/
 
 footer {
