@@ -530,6 +530,25 @@ nav ul li a:hover {
   text-align: center;
 }
 
+.accommodation-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.section-arrow {
+  font-size: 26px;
+  color: #0e306c;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.section-arrow:hover {
+  color: #0093dd;
+  transform: translateY(-3px);
+}
+
 
 /*================ Footer starts here=====================*/
 
@@ -964,6 +983,9 @@ footer a:hover {
 
   .main-title h2 {
     padding: 12px;
+  }
+    .section-arrow {
+    font-size: 22px;
   }
 }
 
