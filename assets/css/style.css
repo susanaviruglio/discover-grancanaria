@@ -243,7 +243,7 @@ nav ul li a:hover {
     font-family: "Sora", Arial, Helvetica, sans-serif;
     margin-bottom: 25px;
 }
-/* modified a so it looks like a button*/
+
 .destination-info .destination-button {
     display: inline-flex;
     align-items: center;
@@ -330,16 +330,63 @@ nav ul li a:hover {
 
 .activities-content {
   flex: 1;
-  padding: 60px 30px;
   text-align: center;
+  padding: 20px 30px;
   font-weight: 500;
   color: black;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   border-radius: 20px;
-  box-shadow: 5px 10px #888888;
+  box-shadow: 10px 10px 5px #aaaaaa;
+  /*box-shadow: 5px 10px #888888;*/
   font-family: "Sora", Arial, Helvetica, sans-serif;
+  background-color:antiquewhite;
 }
 
+.activities-content img {
+    box-shadow: 5px 5px #888888;
+    width: 580px;
+    max-width: 1000px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.activities-info h3{
+  font-size: clamp(20px, 3vw, 27px);
+  color: #0e306c;
+  font-weight: bold;
+}
+
+.activities-info p{
+  font-size: clamp(16px, 2vw, 20px);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+
+.activities-info a {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color:#f6b800;
+    color: #0e306c;
+    font-weight: bold;
+    border: none;
+    padding: 20px 40px;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.activities-info a:hover {
+    background-color:#0093dd;
+    color: black;
+    text-decoration: none;
+}
 
 /*================ Footer starts here=====================*/
 
@@ -395,6 +442,7 @@ footer a:hover {
   .centered p {
     top: 30%;
   }
+
   /* ===== Destinations Responsive ===== */
   .destination-container,
     .destination-container.reverse {
@@ -418,9 +466,9 @@ footer a:hover {
     .destination-info h3 {
         font-size: 2rem;
     }
-  
 
-} 
+}
+
 
 @media only screen and (max-width: 973px ) {
     
