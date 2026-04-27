@@ -1,0 +1,1148 @@
+/*Style fonts here*/
+@import url('https://fonts.googleapis.com/css2?family=Chicle&family=Fascinate+Inline&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=Knewave&family=Sora:wght@100..800&display=swap');
+/*Style fonts ends here */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color:  #f5f5f5;
+}
+/* Header starts here */
+/* navigation */
+
+ul {
+  display: flex;                
+  justify-content: flex-end; 
+  list-style-type: none;
+  background-color: #0e306c;
+}
+
+
+ul li a {
+  font-family: "Sora", Arial, Helvetica, sans-serif;
+  font-size:20px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #446db2;
+}
+
+/* Background image Home*/
+
+.container {
+  position: relative;
+  height:70vh;
+  min-height: 350px;
+  max-height: 900px;
+  overflow: hidden;
+  text-align: center;
+  color: white;
+}
+
+.background-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(80%);
+}
+
+.centered h1 {
+  font-family: "Knewave", Arial, Helvetica, sans-serif;
+  font-size: clamp(45px, 8vw, 150px); /*responsive font size*/
+  color: antiquewhite;
+  -webkit-text-stroke: 1px #422b08; /*font border*/
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap; /*keep text in the same line*/
+}
+
+.centered p {
+  font-family: "Chicle", Arial, Helvetica, sans-serif;
+  font-size: clamp(22px, 3vw, 50px);
+  color: rgb(76, 47, 3);
+  -webkit-text-stroke: 1px #fceacd; /*font border*/
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* header ends here*/
+
+/* homepage main starts here */
+
+.introduction {
+  max-width: 900px;
+  margin: 80px auto;  
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* section 1 */
+.main-title h2 {
+  font-family: "Sora", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: clamp(26px, 4vw, 40px);
+  color: #0e306c;
+  text-align: center;
+  padding: 24px;
+  margin:10px;
+  margin-bottom:20px;
+}
+
+.main-text p {
+  font-family: "Sora", Arial, Helvetica, sans-serif;
+  text-align: justify;
+  font-size: clamp(16px, 2vw, 20px);
+  line-height: 1.8;
+  color: black;
+}
+
+/* section 2*/
+
+.introduction-extra {
+  display: flex;
+  justify-content: center;
+  gap:20px;
+  margin: 100px auto;
+  max-width: 1100px;
+  padding: 0 20px;
+}
+
+.box {
+  flex: 1;
+  padding: 60px 30px;
+  text-align: center;
+  font-weight: 500;
+  color: black;
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 5px 10px #888888;
+  font-family: "Sora", Arial, Helvetica, sans-serif;
+}
+
+.box h3 {
+  font-size: clamp(20px, 3vw, 27px);
+}
+
+.box p {
+  font-size: clamp(16px, 2vw, 20px);
+  padding-top: 20px;
+}
+
+.white {
+  background-color: white;
+}
+.blue {
+
+   background-color: #0093dd;
+}
+.yellow {
+
+   background-color: #f6b800;
+}
+/* ====== Destinations page style starts here =============*/
+.introduction-background{
+    width: 100%;
+    max-width: none;
+    height: 300px;
+    margin: 0 0 80px 0;
+    padding: 0 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+#destinations-background-img {
+   background-image:
+        linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),
+        url('../images/sand.png');
+}
+
+.introduction-background::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0), #f5f5f5);
+}
+
+.introduction-background .main-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.introduction-background .main-text p {
+    text-align: center;   
+    color: black;
+    font-weight: 500;
+}
+
+.destination-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 110px;
+      margin: 100px auto;
+      max-width: 1250px;
+      padding: 0 40px;
+}
+
+.destination-container.reverse {
+    flex-direction: row-reverse;
+}
+
+.destination-image img {
+    width: 580px;
+    max-width: 1000px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 5px 10px #888888;
+    transition: transform 0.3s ease;
+}
+
+.destination-image img:hover {
+    transform: scale(1.03);
+}
+.destination-info {
+    max-width: 430px;
+}
+
+.destination-info h3 {
+    font-size: 2.2rem;
+    margin: 10px 0 15px;
+    font-family: "Sora", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #0e306c;
+}
+
+.destination-info p {
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 1.6;
+    color: black;
+    font-family: "Sora", Arial, Helvetica, sans-serif;
+    margin-bottom: 25px;
+}
+
+.destination-info .destination-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color:#f6b800;
+    color: #0e306c;
+    font-family: "Sora", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: none;
+    padding: 14px 26px;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.destination-info .destination-button:hover {
+    background-color:#0093dd;
+     color: black;
+     text-decoration: none;
+}
+
+.destination-info .destination-button i {
+    transition: transform 0.3s ease;
+}
+
+.destination-info .destination-button:hover i {
+    transform: translateX(5px);
+}
+/* ====== Things To Do page style starts here =============*/
+
+#activities-background-img {
+    height: 400px;
+    background-image:
+        linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),
+        url('../images/activities.png');
+}
+
+#activities-background-img::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+
+    background: linear-gradient(to bottom, rgba(255,255,255,0), #f5f5f5);
+}
+
+#activities-background-img .main-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#activities-background-img .main-text p {
+    text-align: center;   
+    color: black;
+    font-weight: 500;
+}
+
+.activities-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 100px auto;
+    max-width: 1300px;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.activities-content {
+    width: 360px;
+    text-align: center;
+    padding: 20px;
+    font-weight: 500;
+    color: black;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px #aaaaaa;
+    font-family: "Sora", Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+}
+
+.activities-content img {
+    width: 100%; 
+    height: 230px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.activities-info {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.activities-info h3 {
+    font-size: 1.6rem;
+    color: #0e306c;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.activities-info p {
+    font-size: 1rem;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.activities-info a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6b800;
+    color: #0e306c;
+    font-weight: bold;
+    padding: 14px 30px;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: auto;
+    width: auto;
+}
+
+.activities-info a:hover {
+    background-color: #0093dd;
+    color: black;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.map-container img {
+    width: 70%;
+    max-width: 900px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/*================ Accomodations page starts here=====================*/
+#accomodations-background-img {
+    background-image:
+        linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),
+        url('../images/accomodations.png');
+}
+
+.accommodation-button {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 40px 0;
+    flex-wrap: wrap;
+}
+
+.accommodation-button ul li a {
+    background-color: #f6b800;
+    color: #0e306c;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-family: "Sora", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.accommodation-button ul li a:hover {
+    background-color: #0093dd;
+    color: black;
+}
+
+.accommodation-section-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 110px;
+    margin: auto;
+    max-width: 1500px;
+    padding: 0 40px;
+}
+
+.accommodation-section h2{
+    font-family: "Sora", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: clamp(26px, 4vw, 40px);
+    color: #0e306c;
+    text-align: left;
+    padding: 24px;
+    margin: 100px 0 20px 0;
+    margin-bottom: 20px;
+}
+
+.accommodation-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    width: 100%;          
+    max-width: 1500px;   
+    margin: 40px auto 9px;
+    padding: 20px;     
+    background-color:antiquewhite;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.accomodation-image img {
+    width: 580px;
+    max-width: 1000px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 5px 10px #888888;
+    transition: transform 0.3s ease;
+}
+
+.accomodation-info {
+    max-width: 600px;  
+    flex: 1;
+}
+
+.accomodation-info h3 {
+    font-size: 2.2rem;
+    margin: 10px 0 15px;
+    font-family: "Sora", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #0e306c;
+}
+
+.accomodation-info p {
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 1.6;
+    color: black;
+    font-family: "Sora", Arial, Helvetica, sans-serif;
+    margin-bottom: 25px;
+}
+
+.accomodation-button-info p {
+    text-align: center;
+    align-items: center;
+    font-family: "Sora", Arial, Helvetica, sans-serif;
+    font-size: 2.2rem;
+    margin: 10px 0 15px;
+    font-weight: bold;
+    color: #0e306c;
+      
+}
+
+.accomodation-button-info .destination-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color:#f6b800;
+    color: #0e306c;
+    font-family: "Sora", Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: none;
+    padding: 14px 26px;
+    border-radius: 30px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.accomodation-button-info .destination-button:hover {
+  background-color: #0093dd;
+  color: black;
+  text-decoration: none;
+}
+
+#arrow-button {
+  color: #0e306c;
+  text-align: center;
+}
+
+#arrow-button:hover {
+  color:#446db2;
+  text-align: center;
+}
+
+.accommodation-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.section-arrow {
+  font-size: 26px;
+  color: #0e306c;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.section-arrow:hover {
+  color: #0093dd;
+  transform: translateY(-3px);
+}
+
+/*================ Contacts Page starts here=====================*/
+#contacts-background-img{
+     background-image:
+        linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),
+        url('../images/contact.png');
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 100px auto;
+  max-width: 1100px;
+  padding: 0 20px;
+  flex-wrap: wrap;
+  font-family: "Sora", Arial, Helvetica, sans-serif;
+}
+
+.form-content,
+.contact-info {
+  width: 420px;
+  background-color: #e6d7c3;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* ===== Form ===== */
+
+.form-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-content label {
+  font-weight: bold;
+  color: #0e306c;
+}
+
+.form-content input,
+.form-content textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.form-content textarea {
+  min-height: 120px;
+}
+
+.form-content button {
+  margin-top: 10px;
+  padding: 14px;
+  border-radius: 30px;
+  border: none;
+  background-color: #f6b800;
+  color: #0e306c;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-content button:hover {
+  background-color: #0093dd;
+  color: black;
+}
+
+/* ===== Contact Info ===== */
+
+.contact-info h3 {
+  font-size: 2rem;
+  color: #0e306c;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.contact-info i {
+  color: #0e306c;
+}
+
+
+.contact-info hr {
+  border: none;
+  height: 2px;
+  background-color: #f6b800;
+  margin: 20px 0;
+}
+
+/* ===== FAQ ===== */
+
+.contact-info h4 {
+  text-align: center;
+  font-size: 1.6rem;
+  margin: 20px 0;
+  color: #0e306c;
+}
+
+.faq-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-info details {
+  background-color: #f5f5f5;
+  border-radius: 15px;
+  padding: 15px 20px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.contact-info details:hover {
+  transform: translateY(-2px);
+}
+
+.contact-info summary {
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  list-style: none;
+  color: #0e306c;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.contact-info summary::-webkit-details-marker {
+  display: none;
+}
+
+
+.contact-info summary::before {
+  content: "▾";
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+
+.contact-info details[open] summary::before {
+  transform: rotate(180deg);
+}
+
+.contact-info details p {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #333;
+}
+/*================ Footer starts here=====================*/
+
+footer {
+  text-align: center;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  background-color: #0e306c;
+  padding: 15px;
+  gap: 30px;
+  list-style: none;
+  flex-wrap: wrap;             
+}
+
+footer ul li {
+  list-style: none;
+}
+
+footer a {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  font-family: "Sora", Arial, Helvetica, sans-serif;
+}
+
+footer a:hover {
+  color: #91a9d4
+
+}
+
+#copyright {
+  color: white;
+  font-family: "Sora", Arial, Helvetica, sans-serif;
+  font-style:italic;
+  font-size:20px;
+}
+
+
+@media only screen and (max-width: 1583px ) {
+    
+  .centered p {
+    top: 32%;
+  }
+}
+/* ===== Accommodations Responsive ===== */
+
+@media only screen and (max-width: 1100px) {
+  .accommodation-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+    width: 90%;
+    padding: 25px;
+  }
+
+  .accomodation-image img {
+    width: 100%;
+    height: 320px;
+  }
+
+  .accomodation-info {
+    max-width: 100%;
+  }
+
+  .accomodation-info h3 {
+    font-size: 2rem;
+  }
+
+  .accomodation-info p {
+    text-align: center;
+  }
+
+  .accomodation-button-info p {
+    font-size: 1.8rem;
+  }
+
+  .accommodation-section-container {
+    justify-content: center;
+    padding: 0 20px;
+  }
+
+  .accommodation-section h2 {
+    text-align: center;
+    margin-top: 70px;
+  }
+}
+
+@media only screen and (max-width: 1095px ) {
+
+  .centered p {
+    top: 30%;
+  }
+
+  /* ===== Destinations Responsive ===== */
+  .destination-container,
+    .destination-container.reverse {
+        flex-direction: column;
+        gap: 35px;
+        margin: 70px auto;
+        padding: 0 25px;
+        text-align: center;
+    }
+
+    .destination-image img {
+        width: 100%;
+        max-width: 100%;
+        height: 280px;
+    }
+
+    .destination-info {
+        max-width: 100%;
+    }
+
+    .destination-info h3 {
+        font-size: 2rem;
+    }
+  /* ===== Things to Do Responsive ===== */
+
+    .activities-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .activities-content {
+        width: 90%;
+        max-width: 600px;
+    }
+
+    .activities-content img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .map-container img {
+        width: 90%;
+    }
+
+}
+
+
+@media only screen and (max-width: 973px ) {
+    
+  .centered p {
+    top: 32%;
+  }
+
+} 
+
+
+@media only screen and (max-width: 879px ) {
+    
+  .centered p { 
+    display: none;
+  }
+
+} 
+
+/*Tablet Responsive*/
+@media only screen and (max-width: 768px) {
+  /* ===== Homepage Responsive ===== */
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  ul li a {
+    font-size: 14px;
+    padding: 10px;
+  }
+  
+  .introduction-extra {
+    flex-direction: column;
+    height: auto;
+    padding: 0 20px;
+    gap: 25px;
+  }
+
+  .box {
+    margin: 0;
+  }
+  /* ===== Destinations Responsive ===== */
+  .destination-container,
+    .destination-container.reverse {
+        flex-direction: column;
+        gap: 35px;
+        margin: 70px auto;
+        padding: 0 25px;
+        text-align: center;
+    }
+
+    .destination-image img {
+        width: 100%;
+        max-width: 100%;
+        height: 280px;
+    }
+
+    .destination-info {
+        max-width: 100%;
+    }
+
+    .destination-info h3 {
+        font-size: 2rem;
+    }
+
+
+  /* ===== Things to do Responsive ===== */
+     #activities-background-img {
+        height: 350px;
+        padding: 0 25px;
+    }
+
+    #activities-background-img .main-text p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .activities-container {
+        margin: 70px auto;
+        padding: 0 25px;
+    }
+
+    .activities-content {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .activities-content img {
+        height: 250px;
+    }
+
+    .activities-info h3 {
+        font-size: 1.8rem;
+    }
+
+    .activities-info p {
+        font-size: 1rem;
+    }
+
+    .map-container {
+        margin: 70px auto;
+        padding: 20px;
+    }
+
+    .map-container img {
+        width: 100%;
+    }
+
+/* ===== Accommodations to do Responsive ===== */
+
+    .accommodation-button ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    background-color: transparent;
+  }
+
+  .accommodation-button ul li a {
+    font-size: 14px;
+    padding: 10px 18px;
+    border-radius: 25px;
+  }
+
+  .accommodation-container {
+    width: 92%;
+    margin: 30px auto;
+  }
+
+  .accomodation-image img {
+    height: 260px;
+  }
+
+  .accomodation-info h3 {
+    font-size: 1.7rem;
+  }
+
+  .accomodation-info p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .accomodation-button-info p {
+    font-size: 1.5rem;
+  }
+
+  .accomodation-button-info .destination-button {
+    padding: 12px 24px;
+  }
+}
+
+/*Mobile Responsive*/
+@media only screen and (max-width: 480px) {
+  /* ===== Homepage Responsive ===== */
+  .centered h1 {
+    font-size: 42px;
+  }
+
+  .main-title h2 {
+    font-size: 24px;
+  }
+
+  .main-text p {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  footer ul li {
+    flex: 0 0 auto;
+  }
+
+  #copyright {
+    flex: 0 0 100%; 
+    text-align: center;
+    margin-bottom: 5px;
+  }
+    /* ===== Destinations Responsive ===== */
+
+    #destinations-background-img {
+    height: 400px;
+}
+    .destination-container,
+    .destination-container.reverse {
+        gap: 25px;
+        margin: 50px auto;
+        padding: 0 18px;
+    }
+
+    .destination-image img {
+        height: 220px;
+        border-radius: 15px;
+    }
+
+    .destination-info h3 {
+        font-size: 1.7rem;
+    }
+
+    .destination-info p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .destination-info .destination-button {
+        padding: 12px 20px;
+        font-size: 0.85rem;
+    }
+/* ===== Things to Do Responsive ===== */
+    #activities-background-img {
+        height: 420px;
+    }
+
+    .activities-content img {
+        height: 220px;
+    }
+
+    .activities-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .activities-info p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .activities-info a {
+        padding: 12px 22px;
+        font-size: 0.85rem;
+    }
+
+    .map-container {
+        padding: 15px;
+    }
+
+    /* ===== Accommodations to do Responsive ===== */
+
+    #accomodations-background-img {
+    height: 420px;
+  }
+
+  .accommodation-button {
+    padding: 20px 10px;
+  }
+
+  .accommodation-button ul {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .accommodation-button ul li {
+    width: 80%;
+  }
+
+  .accommodation-button ul li a {
+    width: 100%;
+    border-radius: 25px;
+  }
+
+  .accommodation-container {
+    width: 94%;
+    padding: 18px;
+    border-radius: 15px;
+  }
+
+  .accomodation-image img {
+    height: 220px;
+    border-radius: 15px;
+  }
+
+  .accomodation-info h3 {
+    font-size: 1.4rem;
+  }
+
+  .accomodation-info p {
+    text-align: left;
+  }
+
+  .accomodation-button-info p {
+    font-size: 1.3rem;
+  }
+
+  .main-title h2 {
+    padding: 12px;
+  }
+    .section-arrow {
+    font-size: 22px;
+  }
+}
+
+
