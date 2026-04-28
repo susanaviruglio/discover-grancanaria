@@ -638,7 +638,6 @@ nav ul li a:hover {
   color: #0e306c;
 }
 
-
 .contact-info hr {
   border: none;
   height: 2px;
@@ -684,18 +683,15 @@ nav ul li a:hover {
   gap: 10px;
 }
 
-
 .contact-info summary::-webkit-details-marker {
   display: none;
 }
-
 
 .contact-info summary::before {
   content: "▾";
   font-size: 18px;
   transition: 0.3s;
 }
-
 
 .contact-info details[open] summary::before {
   transform: rotate(180deg);
@@ -706,6 +702,17 @@ nav ul li a:hover {
   font-size: 0.95rem;
   color: #333;
 }
+/*================Travel Guide starts here =============*/
+
+#travel-guide-background-img{
+     background-image:
+        linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)),
+        url('../images/transports.png');
+}
+
+
+
+
 /*================ Footer starts here=====================*/
 
 footer {
