@@ -819,6 +819,73 @@ nav ul li a:hover {
   font-weight: bold;
   text-align: left;
 }
+/*====== Maps ======*/
+
+.map-row {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  align-items: stretch;
+  margin-top: 30px;
+}
+
+.map-card {
+  flex: 1;
+  background-color: white;
+  padding: 25px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  font-family: "Sora", Arial, Helvetica, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.map-card h3 {
+  color: #0e306c;
+  margin-bottom: 18px;
+  font-size: 1.45rem;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 18px;
+}
+
+.map-card p {
+  text-align: left;
+  font-size: 1.08rem;
+  line-height: 1.35;
+  margin-bottom: 15px;
+  flex-grow: 1;
+}
+
+.map-card a {
+  display: inline-block;
+  align-self: center;
+  background-color: #f6b800;
+  color: #0e306c;
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.05rem;
+  margin-top: auto;
+}
+
+.map-card a:hover {
+  background-color: #0093dd;
+  color: black;
+}
+
 
 /*================ Footer starts here=====================*/
 
