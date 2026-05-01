@@ -886,6 +886,65 @@ nav ul li a:hover {
   color: black;
 }
 
+/*========== Currency ==========*/
+
+.currency-section {
+  background-color: antiquewhite;
+  padding: 70px 50px;
+  border-radius: 20px;
+  margin: 40px auto 100px;
+  max-width: 1100px;
+  font-family: "Sora", Arial, Helvetica, sans-serif;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.currency-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.currency-text {
+  flex: 1;
+}
+
+.currency-text h3 {
+  font-size: 2rem;
+  color: #0e306c;
+  font-weight: 800;
+  margin-bottom: 25px;
+  
+}
+
+.currency-text p {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: 18px;
+  text-align: justify;
+}
+
+.currency-tip {
+  background-color: white;
+  border-left: 5px solid #f6b800;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+
+.currency-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.currency-image img {
+  width: 100%;
+  max-width: 430px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 10px 10px 0px rgba(0,0,0,0.25);
+}
 
 /*================ Footer starts here=====================*/
 
