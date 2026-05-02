@@ -765,7 +765,7 @@ nav ul li a:hover {
 
 .travel-box {
   background-color: antiquewhite;
-  padding: 40px;
+  padding: 50px 40px;
   border-radius: 20px;
   margin: 40px auto 100px;
   max-width: 1100px;
@@ -819,6 +819,52 @@ nav ul li a:hover {
   font-weight: bold;
   text-align: left;
 }
+
+/* ===== transports images ====*/
+.map-card img,
+.currency-image img {
+  display: block;
+}
+
+.bus-images {
+  display: flex;
+  gap: 30px;
+  margin: 35px 0;
+}
+
+.bus-card {
+  flex: 1;
+  text-align: center;
+}
+
+.bus-card img {
+  width: 100%;
+  height: clamp(200px, 25vw, 320px);
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 6px 6px 0 rgba(0,0,0,0.2);
+  margin-bottom: 10px;
+}
+
+.bus-card img {
+  transition: transform 0.3s ease;
+}
+
+.bus-card img:hover {
+  transform: scale(1.05);
+}
+
+.bus-card p {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-top: 8px;
+}
+
+.bus-card strong {
+  color:#0e306c;
+}
+
 /*====== Maps ======*/
 
 .map-row {
@@ -837,7 +883,6 @@ nav ul li a:hover {
   text-align: center;
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
   font-family: "Sora", Arial, Helvetica, sans-serif;
-
   display: flex;
   flex-direction: column;
 }
@@ -944,6 +989,14 @@ nav ul li a:hover {
   object-fit: cover;
   border-radius: 20px;
   box-shadow: 10px 10px 0px rgba(0,0,0,0.25);
+}
+
+.currency-image img {
+  transition: transform 0.3s ease;
+}
+
+.currency-image img:hover {
+  transform: scale(1.05);
 }
 
 /*================ Footer starts here=====================*/
@@ -1090,7 +1143,6 @@ footer a:hover {
 
 }
 
-
 @media only screen and (max-width: 973px ) {
     
   .centered p {
@@ -1133,10 +1185,6 @@ footer a:hover {
     white-space: nowrap;
   }
 }
-
-
-
-
 
 @media only screen and (max-width: 879px ) {
     
@@ -1342,6 +1390,22 @@ footer a:hover {
   .fare-table td {
     padding: 10px;
     font-size: 0.9rem;
+  }
+  .transport-flex {
+    flex-direction: column;
+  }
+
+  .transport-image img {
+    max-width: 100%;
+    height: 220px;
+  }
+
+  .bus-images {
+    flex-direction: column;
+  }
+
+  .bus-card img {
+    height: 220px;
   }
 }
 
