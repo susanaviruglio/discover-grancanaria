@@ -523,6 +523,7 @@ nav ul li a:hover {
 #arrow-button {
   color: #0e306c;
   text-align: center;
+  font-size: 20px;
 }
 
 #arrow-button:hover {
