@@ -1552,6 +1552,28 @@ footer a:hover {
     .section-arrow {
     font-size: 22px;
   }
+
+  /*==== responsive bus fare table ===*/
+.travel-box details {
+    padding: 14px;
+    overflow-x: auto;
+  }
+
+  .travel-box summary {
+    font-size: 0.9rem;
+  }
+
+  .fare-table {
+    width: 100%;
+    min-width: 380px;
+    font-size: 0.7rem;
+  }
+
+  .fare-table th,
+  .fare-table td {
+    padding: 6px;
+    white-space: nowrap;
+  }
 }
 
 
