@@ -95,7 +95,7 @@ nav ul li a:hover {
 }
 
 /* section 1 */
-.main-title h1 {
+.main-title h2 {
   font-family: "Sora", Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: clamp(26px, 4vw, 40px);
@@ -771,12 +771,12 @@ nav ul li a:hover {
   margin-bottom: 15px;
 }
 
-.transport-box a h3 {
+.transport-box a h2 {
   font-size: clamp(20px, 3vw, 27px);
   color: #0e306c;
 }
 
-.transport-box a h3::after {
+.transport-box a h2::after {
   content: "";
   display: block;
   width: 50px;
@@ -787,7 +787,7 @@ nav ul li a:hover {
 }
 
 .transport-box a:hover i,
-.transport-box a:hover h3 {
+.transport-box a:hover h2 {
   color: #0093dd;
 }
 
