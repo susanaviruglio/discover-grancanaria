@@ -95,7 +95,18 @@ nav ul li a:hover {
 }
 
 /* section 1 */
-.main-title h2 {
+.main-title h1 {
+  font-family: "Sora", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: clamp(26px, 4vw, 40px);
+  color: #0e306c;
+  text-align: center;
+  padding: 24px;
+  margin:10px;
+  margin-bottom:20px;
+}
+
+.main-subtitle h2 {
   font-family: "Sora", Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: clamp(26px, 4vw, 40px);
